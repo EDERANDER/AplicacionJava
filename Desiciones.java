@@ -1,18 +1,24 @@
+import java.util.Scanner;
+
 public class Desiciones {
     public static void main(String[] args) {
-        int expresion = 2;
+        Scanner scanner = new Scanner(System.in);
 
-        switch (expresion) {
-            case 1:
-                System.out.println("Opcion 1");
-                break;
-            case 2:
-                System.out.println("Opcion 2");
-                break;
+        System.out.println("Esribe el nombre de tu pelicular:");
+        String pelicula = scanner.nextLine();
 
-            default:
-                System.out.println("Opcion que no se sabe");
+        System.out.println("Escribe fecha de lanzamiento:");
+        int fecha = scanner.nextInt();
 
-        }
+        System.out.println("Escribe que nota le das a esta pelicula:");
+        double nota = scanner.nextDouble();
+
+        System.out.println("Datos: ");
+        System.out.println("nombre"+pelicula);
+        System.out.println("fecha"+fecha);
+        System.out.println("nota"+nota);
+
+
+
     }
 }
